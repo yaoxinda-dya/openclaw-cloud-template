@@ -1,0 +1,18 @@
+# OpenClaw涓存椂鏂囦欢
+node_modules/
+*.log
+*.tmp
+.DS_Store
+
+# 鏈湴寮€鍙戞枃浠?.vscode/
+.idea/
+
+# 鏁忔劅淇℃伅锛堢粷瀵逛笉瑕佹彁浜わ級
+*.key
+*.pem
+*.env
+secrets/
+credentials/
+
+# OpenClaw杩愯鏃舵枃浠?~/.openclaw/cache/
+~/.openclaw/temp/

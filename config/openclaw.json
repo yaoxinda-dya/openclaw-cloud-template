@@ -1,0 +1,19 @@
+{
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "0.0.0.0",
+    "auth": {
+      "mode": "token",
+      "token": "鍚姩鏃惰嚜鍔ㄧ敓鎴?
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "deepseek/deepseek-chat"
+      },
+      "workspace": "/workspaces/浣犵殑浠撳簱鍚?workspace"
+    }
+  }
+}

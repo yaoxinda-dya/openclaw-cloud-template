@@ -1,0 +1,29 @@
+{
+  "name": "OpenClaw Cloud",
+  "image": "node:20-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "forwardPorts": [18789],
+  "portsAttributes": {
+    "18789": {
+      "label": "OpenClaw Gateway",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "remoteEnv": {
+    "CODESPACES_REMOTE_CONTAINERS_SSH": "false",
+    "GIT_TERMINAL_PROMPT": "0",
+    "GIT_ASKPASS": "echo"
+  },
+  "postCreateCommand": "git config --global url.'https://github.com/'.insteadOf 'git@github.com:' && git config --global user.email 'openclaw@cloud' && git config --global user.name 'OpenClaw User' && bash scripts/setup.sh",
+  "postStartCommand": "bash scripts/start.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-js-debug"
+      ]
+    }
+  }
+}
